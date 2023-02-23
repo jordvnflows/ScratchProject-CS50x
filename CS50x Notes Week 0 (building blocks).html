@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CS50x Notes Week 0</title>
+</head>
+
+<body>
+	
+<!-- 
+Computational Thinking
+
+computer science is about solving a problem
+
+you have an 'input' -> " code " -> 'output'
+there are different systems to use such as unary, and binary
+Unary is (imagine) one finger at a time
+
+computers speak in One's and Zero's
+0's mean OFF
+1's mean ON
+
+-->
+	new section
+<!--
+ex. a single light bulbcan only count from zero to one
+	but imagine using more than one light bulb, now there is more options available
+
+	using three light bulbs, this can be considered Zero:
+	0 0 0
+
+	this can be considered One
+	0 0 1
+	
+	this can be considered Two
+	0 1 0
+
+	this can be considered Three
+	0 1 1
+
+	this can be considered Four
+	1 0 0
+	
+	Five
+	1 0 1
+
+	Six
+	1 1 0
+
+	Seven
+	1 1 1
+
+Base-2 (Binary)
+decimal is base-10 (what we use as humans)
+
+computers will simplify and use a different base which is used to describe ON or OFF
+
+this is the reason " 0 0 0 " = OFF OFF OFF = the number Zero
+
+Three bits will only equal up to the number Seven
+adding another bit can equal higher number and so on
+computers generally use eight bits to represent a numbers
+-->
+	new section
+<!--
+Representation
+how does 0 and 1 represent numbers, but what will represent letters?
+
+we would be using 8 bits
+
+ASCII
+language mapping system
+
+ex. receiving a bit such as:
+	01001000 01001001 0100001
+
+	which would equal to:
+	72 73 33
+
+	which would then represent the letters and punctuation as:
+	H I !
+-->
+	new section
+<!--
+Emojis
+ASCII historically used 7 bits to represent the american alphabet
+the solution to add more letters or symbols would be by adding another bit
+
+Unicode
+can ensure that theres representation of other languages and have enough room to add emoji or picture representations
+
+emojis are now added and are considered characters
+- can also be a different font (iOS emojis vs android emoji)
+
+within emojis, you can modify the display of skin tones by having a structured emoji first then adding a pattern of bits to add the 'variety'
+-->
+	new section
+<!--
+RGB
+to represent a color there is a number representing how much red, green, and blue should be shown
+
+ex. to continue to use the example of 72 73 33:
+	the red being 72
+	the green being 73
+	the blue being 33
+
+	representing a particular shade of yellow
+
+Images, Video and Sound
+-images are collections of RGB values
+-videos are sequences of several images that are stored together with continuously changing RGB values
+-musical notes are represented by MIDI, mp3, wav, and so on...
+-->
+	new section
+<!--
+Algorithms
+problem-solving is central to computer science and programming
+
+ex. imagine the basic problem of trying to locate a	
+single name in a phone book
+	
+	a final option would be to go to the middle of the phone book and ask whether the name is to the right or left
+		then repeat the process
+
+	an approach like this could be called an algorithm
+		the speed of each algorithm can be pictures as the big-o notation
+
+	we would want out algorithm to make a logarithmic curve such as (log2 (n)) where it represents a short time to solve as well as minimizing the size of the problem
+-->
+	new section
+<!--
+Pseudocode and Programming Building Blocks
+ability to create Pseudocode is extremely beneficial
+
+	1. pick up phone book
+	2. open to middle of phone book
+	3. look at page
+	4. if person is on page
+	5. 	call person
+	6. else if the person is earlier in the book
+	7. 	open to middle of left half book
+	8. 	go back to line 3
+	9. else if person is later in book
+	10.  open to middle of right half of book
+	11.  go back to line 3
+	12. else
+	13.  quit
+
+before creating formal code, pseudocode allows you to think through the logic of the problem in advance
+you can also later provide this info to others that are seeking to understand the coding decisions and how the code works
+
+within the example above notice the 'verb' at the 			beginning of the lines
+then notice states such as: 'if' or 'else if'
+third, notice how there is statements that can be states 	as true or false (BOOLEAN EXPRESSIONS)
+finally notice how these statements like loops: 'go back 	to line 3'
+	
+in context /Scratch provides basic building blocks for programming
+-->
+	new section
+<!--
+Scratch
+
+
+</body>
+</html>

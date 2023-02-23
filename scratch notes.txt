@@ -1,0 +1,43 @@
+[action]
+scene + sprite/
+hide>
+show<
+movement~
+
+[start]
+Backdrop/	startpage
+Buttons/	about(a) + start(space)
+	[action 'about(a)']
+	Backdrop/	startpage
+	Buttons/	back(b)
+	Hide>		start(space)
+	Show<		back(b) + aboutscript
+		[action 'back(b)']
+		Backdrop/	startpage
+		Buttons/	about(a) + start(space)
+		Hide>		back(b) + aboutscript
+	[action 'start(space)']
+	Backdrop/	startpage
+	Buttons/	pieces(w)
+	Hide>		about(a) + start(space)
+	Show<		pieces(w)
+		[action 'pieces(w)']
+		Backdrop/	piecesbackdrop
+		Buttons/	Pawn(1) + Knight(2) + Bishop(3) + Rook(4) + Queen(5) + King(6) + reset(left arrow)
+		Hide>		pieces(w)
+		Show<		pawn(1) + knight(2) + bishop(3) + rook(4) + queen(5) + king(6) + reset(left arrow) + chessboard
+		* should I assign movements as well for certain pieces?
+		**if so it may require different reset keys for each piece... about 12 functions = 2 functions per piece
+			[action 'Pawn(1) or Knight(2) or Bishop(3) or Rook(4) + Queen(5) + King(6)']
+			Backdrop/	piecesbackdrop
+			Buttons/	Pawn(1) + Knight(2) + Bishop(3) + Rook(4) + Queen(5) + King(6) + reset(left arrow)
+			Hide>		n/a
+			Show<		piece information and movement options
+			Move~		correlated piece to correct position on chess board
+				[action 'reset(left arrow)']
+				Backdrop/	piecesbackrop
+				Buttons/	Pawn(1) + Knight(2) + Bishop(3) + Rook(4) + Queen(5) + King(6) + reset(left arrow)
+				Hide>		n/a
+				Show<		Pawn(1) + Knight(2) + Bishop(3) + Rook(4) + Queen(5) + King(6) + reset(left arrow)
+				Move~		reset piece position
+			
