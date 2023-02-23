@@ -41,3 +41,7 @@ Buttons/	about(a) + start(space)
 				Show<		Pawn(1) + Knight(2) + Bishop(3) + Rook(4) + Queen(5) + King(6) + reset(left arrow)
 				Move~		reset piece position
 			
+*main objective complete
+
+	should clones represent entire board
+*secondary objective complete
